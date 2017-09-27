@@ -2,6 +2,8 @@
  # Auto-Signin-script-for-ADFS
 This is a script for auto-signing a default user to ADFS. This may be useful in creating test scenarios for ADFS. This uses already documented features in ADFS https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/advanced-customization-of-ad-fs-sign-in-pages
 
+This script is useful for testing "Federated Login CSRF" that I presented at AppSec USA 2017: https://appsecusa2017.sched.com/event/B26I/federated-login-csrf
+
 ## Step 1 - Create a custom theme
 ```powershell
 New-AdfsWebTheme –Name custom –SourceName default  
